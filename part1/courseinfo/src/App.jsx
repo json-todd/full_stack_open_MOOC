@@ -21,8 +21,8 @@ function App() {
   return (
     <>
       <Header course={course}/>
-      <Content part={[part1, part2, part3]} exercises={[exercises1, exercises2, exercises3]} />
-      <Total exercises={[exercises1, exercises2, exercises3]} />
+      <Content part={[part1.name, part2.name, part3.name]} exercises={[part1.exercises, part2.exercises, part3.exercises]} />
+      <Total exercises={[part1.exercises, part2.exercises, part3.exercises]} />
     </>
     
   );
